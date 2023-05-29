@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/style.css">
+    <script type="application/javascript" src="./js/rpie.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="left-phone">
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="left">
+                    <div class="company">
+                        <img id="logo" src="./img/logo.png" alt="">
+                        <h3 style="display: block; margin: auto  1rem;">Paguyuban</h3>
+                    </div>
+
+                    <div class="navbar1">
+                        <div class="dashboard">
+                            <img id="dashboard-1" src="./img/menu-white.png" alt="">
+                            <a href="#" id="dashboard">Dashboard</a>
+                        </div>
+                        <div class="dashboard  dashboard-content">
+                            <img src="./img/user.png" alt="">
+                            <a href="#" id="profile">Profile</a>
+                        </div>
+                        <div class="dashboard dashboard-content">
+                            <img src="./img/group-chat.png" alt="">
+                            <a href="#" id="member">Member</a>
+                        </div>
+                        <div class="dashboard dashboard-content">
+                            <img src="./img/analytics.png" alt="">
+                            <a href="#" id="analytics">Analytics</a>
+                        </div>
+                        <div class="dashboard dashboard-content">
+                            <img src="./img/document.png" alt="">
+                            <a href="#" id="document">Document</a>
+                        </div>
+                        <div class="dashboard dashboard-content">
+                            <img src="./img/settings.png" alt="">
+                            <a href="#" id="setting">Setting</a>
+                        </div>
+                    </div>
+                    <div class="dashboard dashboard-content">
+                        <a href="#" id="setting">Logout</a>
+                        <img style="width: 1.3rem; height: 1.3rem; margin-left: 1rem;" src="./img/logout.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <span id="nav-span" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+            <footer>&copy; 2023 Swayanshu Panda</footer>
+        </div>
+
+
+
+
+        <div class="left left-pc">
+            <div class="company">
+                <img id="logo" src="./img/logo.png" alt="">
+                <h3 style="display: block; margin: auto  1rem;">Paguyuban</h3>
+            </div>
+
+            <div class="navbar1">
+                <div class="dashboard">
+                    <img id="dashboard-1" src="./img/menu-white.png" alt="">
+                    <a href="#" id="dashboard">Dashboard</a>
+                </div>
+                <div class="dashboard  dashboard-content">
+                    <img src="./img/user.png" alt="">
+                    <a href="#" id="profile">Profile</a>
+                </div>
+                <div class="dashboard dashboard-content">
+                    <img src="./img/group-chat.png" alt="">
+                    <a href="#" id="member">Member</a>
+                </div>
+                <div class="dashboard dashboard-content">
+                    <img src="./img/analytics.png" alt="">
+                    <a href="#" id="analytics">Analytics</a>
+                </div>
+                <div class="dashboard dashboard-content">
+                    <img src="./img/document.png" alt="">
+                    <a href="#" id="document">Document</a>
+                </div>
+                <div class="dashboard dashboard-content">
+                    <img src="./img/settings.png" alt="">
+                    <a href="#" id="setting">Setting</a>
+                </div>
+            </div>
+            <div class="dashboard dashboard-content">
+                <a href="#" id="setting">Logout</a>
+                <img style="width: 1.3rem; height: 1.3rem; margin-left: 1rem;" src="./img/logout.png" alt="">
+            </div>
+        </div>
+        <div class="middle">
+            <div class="welcome">
+                <div class="text">
+                    <h2>Welcome Back, <strong>Gavin !</strong></h2>
+                    <p>Here are your activities today</p>
+                </div>
+                <input type="date" id="date" name="t" value="2023-01-13" min="2000-01-01" max="2050-12-31">
+            </div>
+            <div class="statistics">
+                <div class="box">
+                    <img style="background-color: #ffc0cb;" id="box-img1" src="./img/document-white.png" alt="">
+                    <div class="box-inner">
+                        <h3>607</h3>
+                        <img src="./img/arrow-trend-up-solid.svg" alt="">
+                    </div>
+                    <div class="box-inner">
+                        <h5>New Activities</h5>
+                        <p style="color: rgb(2, 208, 2);">+156%</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <img style="background-color: #d836d8;" id="box-img2" src="./img/upload-white.png" alt="">
+                    <div class="box-inner">
+                        <h3>3.6k</h3>
+                        <img src="./img/arrow-trend-down-solid.svg" alt="">
+                    </div>
+                    <div class="box-inner">
+                        <h5>Total Activities</h5>
+                        <p style="color: red;">-10%</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <img style="background-color: #5f7ae4;" id="box-img3" src="./img/people-white.png" alt="">
+                    <div class="box-inner">
+                        <h3>1.4k</h3>
+                        <img src="./img/arrow-trend-down-solid.svg" alt="">
+                    </div>
+                    <div class="box-inner">
+                        <h5>Active Member</h5>
+                        <p style="color: red;">-1%</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <img style="background-color: #5bdaeb;" id="box-img4" src="./img/user-white.png" alt="">
+                    <div class="box-inner">
+                        <h3>809</h3>
+                        <img src="./img/arrow-trend-up-solid.svg" alt="">
+                    </div>
+                    <div class="box-inner">
+                        <h5>New Member</h5>
+                        <p style="color: rgb(2, 208, 2);">+10%</p>
+                    </div>
+                </div>
+            </div>
+            <div class="post1">
+                <div class="post1-top">
+                    <div class="name">
+                        <img src="./img/pic1.png" alt="">
+                        <div>
+                            <h4>Jack Geralish</h4>
+                            <p style="margin-top: -0.4rem; color: grey; font-size: 0.85rem;">5 mins ago</p>
+                        </div>
+                    </div>
+                    <a href="#"><img class="dots" src="./img/dots.png" alt=""></a>
+                </div>
+                <div class="message">
+                    <p style="font-size: 1.1rem;"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum libero
+                        nam voluptas debitis
+                        eligendi neque sequi reiciendis, quae vero, ab dolore repudiandae corporis pariatur ipsam quod
+                        exercitationem eos repellat! Consequatur.
+                    </p>
+                    <div class="like">
+                        <a href="#"><img src="./img/heart-regular.svg" alt=""></a>
+                        <p>1.3k likes</p>
+                        <a href="#"><img src="./img/icons8-comments-48.png" alt=""></a>
+                        <p>305 comments</p>
+                    </div>
+                    <div class="comment">
+                        <input type="text" name="comment" id="" placeholder="Comment here...">
+                        <a href="#"><img src="./img/send-white.png" alt=""></a>
+                    </div>
+
+                    <div class="name-comment">
+                        <img src="./img/pic2.png" alt="">
+                        <div>
+                            <h5>Lord Gavin</h5>
+                            <p style="margin-top: -0.6rem; color: grey; font-size: 0.75rem;">Just now</p>
+                        </div>
+                    </div>
+                    <div class="comment-body">
+                        Lorem, ipsum dolor...
+                    </div>
+                    <a id="more-comment" href="#">see all comments</a>
+                </div>
+            </div>
+            <div class="post1">
+                <div class="post1-top">
+                    <div class="name">
+                        <img src="./img/pic1.png" alt="">
+                        <div>
+                            <h4>Jack Geralish</h4>
+                            <p style="margin-top: -0.4rem; color: grey; font-size: 0.85rem;">5 mins ago</p>
+                        </div>
+                    </div>
+                    <a href="#"><img class="dots" src="./img/dots.png" alt=""></a>
+                </div>
+                <div class="message">
+                    <p style="font-size: 1.1rem;"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum libero
+                        nam voluptas debitis
+                        eligendi neque sequi reiciendis, quae vero, ab dolore repudiandae corporis pariatur ipsam quod
+                        exercitationem eos repellat! Consequatur.
+                    </p>
+                    <div class="like">
+                        <a href="#"><img src="./img/heart-regular.svg" alt=""></a>
+                        <p>1.3k likes</p>
+                        <a href="#"><img src="./img/icons8-comments-48.png" alt=""></a>
+                        <p>305 comments</p>
+                    </div>
+                    <div class="comment">
+                        <input type="text" name="comment" id="" placeholder="Comment here...">
+                        <a href="#"><img src="./img/send-white.png" alt=""></a>
+                    </div>
+
+                    <div class="name-comment">
+                        <img src="./img/pic2.png" alt="">
+                        <div>
+                            <h5>Lord Gavin</h5>
+                            <p style="margin-top: -0.6rem; color: grey; font-size: 0.75rem;">Just now</p>
+                        </div>
+                    </div>
+                    <div class="comment-body">
+                        Lorem, ipsum dolor...
+                    </div>
+                    <a id="more-comment" href="#">see all comments</a>
+                </div>
+            </div>
+            <div class="post1">
+                <div class="post1-top">
+                    <div class="name">
+                        <img src="./img/pic1.png" alt="">
+                        <div>
+                            <h4>Jack Geralish</h4>
+                            <p style="margin-top: -0.4rem; color: grey; font-size: 0.85rem;">5 mins ago</p>
+                        </div>
+                    </div>
+                    <a href="#"><img class="dots" src="./img/dots.png" alt=""></a>
+                </div>
+                <div class="message">
+                    <p style="font-size: 1.1rem;"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum libero
+                        nam voluptas debitis
+                        eligendi neque sequi reiciendis, quae vero, ab dolore repudiandae corporis pariatur ipsam quod
+                        exercitationem eos repellat! Consequatur.
+                    </p>
+                    <div class="like">
+                        <a href="#"><img src="./img/heart-regular.svg" alt=""></a>
+                        <p>1.3k likes</p>
+                        <a href="#"><img src="./img/icons8-comments-48.png" alt=""></a>
+                        <p>305 comments</p>
+                    </div>
+                    <div class="comment">
+                        <input type="text" name="comment" id="" placeholder="Comment here...">
+                        <a href="#"><img src="./img/send-white.png" alt=""></a>
+                    </div>
+
+                    <div class="name-comment">
+                        <img src="./img/pic2.png" alt="">
+                        <div>
+                            <h5>Lord Gavin</h5>
+                            <p style="margin-top: -0.6rem; color: grey; font-size: 0.75rem;">Just now</p>
+                        </div>
+                    </div>
+                    <div class="comment-body">
+                        Lorem, ipsum dolor...
+                    </div>
+                    <a id="more-comment" href="#">see all comments</a>
+                </div>
+            </div>
+            <div class="post1">
+                <div class="post1-top">
+                    <div class="name">
+                        <img src="./img/pic1.png" alt="">
+                        <div>
+                            <h4>Jack Geralish</h4>
+                            <p style="margin-top: -0.4rem; color: grey; font-size: 0.85rem;">5 mins ago</p>
+                        </div>
+                    </div>
+                    <a href="#"><img class="dots" src="./img/dots.png" alt=""></a>
+                </div>
+                <div class="message">
+                    <p style="font-size: 1.1rem;"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum libero
+                        nam voluptas debitis
+                        eligendi neque sequi reiciendis, quae vero, ab dolore repudiandae corporis pariatur ipsam quod
+                        exercitationem eos repellat! Consequatur.
+                    </p>
+                    <div class="like">
+                        <a href="#"><img src="./img/heart-regular.svg" alt=""></a>
+                        <p>1.3k likes</p>
+                        <a href="#"><img src="./img/icons8-comments-48.png" alt=""></a>
+                        <p>305 comments</p>
+                    </div>
+                    <div class="comment">
+                        <input type="text" name="comment" id="" placeholder="Comment here...">
+                        <a href="#"><img src="./img/send-white.png" alt=""></a>
+                    </div>
+
+                    <div class="name-comment">
+                        <img src="./img/pic2.png" alt="">
+                        <div>
+                            <h5>Lord Gavin</h5>
+                            <p style="margin-top: -0.6rem; color: grey; font-size: 0.75rem;">Just now</p>
+                        </div>
+                    </div>
+                    <div class="comment-body">
+                        Lorem, ipsum dolor...
+                    </div>
+                    <a id="more-comment" href="#">see all comments</a>
+                </div>
+            </div>
+        </div>
+        <div class="right right-pc">
+            <div class="right-top">
+                <input type="text" name="" id="" placeholder="Search">
+                <a href="#"><img src="./img/icons8-comments-48.png" alt=""></a>
+                <a href="#"><img src="./img/bell.png" alt=""></a>
+            </div>
+            <div class="profile">
+                <h2>My Profile</h2>
+                <img src="./img/person1.jpg" alt="">
+                <h3>Lord Gavin</h3>
+                <p class="designation" style="margin-top: -0.6rem; color: grey; font-size: 0.75rem;">Ux/Ui designer</p>
+                <p class="about" style="text-align: justify;">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Culpa, consequatur. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, officiis?</p>
+                <div class="activity">
+                    <div id="activity1">
+                        <img src="./img/document-white.png" alt="">
+                        <div>
+                            <h4>12</h4>
+                            <p style="margin-top: -0.6rem; color: grey; font-size: 0.75rem;">New Activity</p>
+                        </div>
+                    </div>
+                    <div id="activity2">
+                        <img src="./img/upload-white.png" alt="">
+                        <div>
+                            <h4>122</h4>
+                            <p style="margin-top: -0.6rem; color: grey; font-size: 0.75rem;">Total Activity</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="general">
+                <h2>General Activity</h2>
+                <div class="false-For-Bottom-Text">
+                    <div class="mypiechart">
+                        <canvas id="myCanvas" width="300" height="300"></canvas>
+                    </div>
+                </div>
+                <div class="data">
+                    <div style="background-color: #ffc0cb;"></div>
+                    <p>Github(287)</p>
+                    <div style="background-color: #d836d8;"></div>
+                    <p>Discord(10)</p>
+                </div>
+                <div class="data">
+                    <div style="background-color: #5f7ae4;"></div>
+                    <p>Linkedin(57)</p>
+                    <div style="background-color: #5bdaeb;"></div>
+                    <p>Slack(81)</p>
+                </div>
+
+            </div>
+        </div>
+
+        <div style="padding: 1rem;" class="right-phone">
+            <div id="myRightSidenav" class="rightsidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeProfile()">&times;</a>
+                <div class="right-top">
+                    <input type="text" name="" id="" placeholder="Search">
+                    <a href="#"><img src="./img/icons8-comments-48.png" alt=""></a>
+                    <a href="#"><img src="./img/bell.png" alt=""></a>
+                </div>
+                <div class="profile">
+                    <h2 style="margin: 1rem">My Profile</h2>
+                    <img style="display: block; margin: auto;" src="./img/person1.jpg" alt="">
+                    <h3 style="margin: 1rem" >Lord Gavin</h3>
+                    <p style="margin: 1rem" class="designation" style="margin-top: -0.6rem; color: grey; font-size: 0.75rem;">Ux/Ui designer
+                    </p>
+                    <p class="about" style="text-align: justify; margin: 1rem;">Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit.
+                        Culpa, consequatur. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, officiis?</p>
+                    <div class="activity">
+                        <div id="activity1">
+                            <img src="./img/document-white.png" alt="">
+                            <div>
+                                <h4>12</h4>
+                                <p style="margin-top: -0.6rem; color: grey; font-size: 0.75rem;">New Activity</p>
+                            </div>
+                        </div>
+                        <div id="activity2">
+                            <img src="./img/upload-white.png" alt="">
+                            <div>
+                                <h4>122</h4>
+                                <p style="margin-top: -0.6rem; color: grey; font-size: 0.75rem;">Total Activity</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="general">
+                    <h2 style="margin: 1rem">General Activity</h2>
+                    <div class="false-For-Bottom-Text">
+                        <div class="mypiechart">
+                            <canvas id="myCanvas1" width="200" height="200"></canvas>
+                        </div>
+                    </div>
+                    <div class="data">
+                        <div style="background-color: #ffc0cb;"></div>
+                        <p>Github(287)</p>
+                        <div style="background-color: #d836d8;"></div>
+                        <p>Discord(10)</p>
+                    </div>
+                    <div class="data">
+                        <div style="background-color: #5f7ae4;"></div>
+                        <p>Linkedin(57)</p>
+                        <div style="background-color: #5bdaeb;"></div>
+                        <p>Slack(81)</p>
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                </div>
+            </div>
+            <span onclick="openProfile()"><img class="span-img" src="./img/user.png" alt=""></span>
+        </div>
+    </div>
+    
+    <footer style="position: sticky; bottom: 0.9rem; left: 1.5rem"><a href="ww.linkedin.com/in/swayanshupanda">&copy; 2023 Swayanshu Panda </a> </footer>
+
+
+
+
+    <!-- toggle toolbar script -->
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "300px";
+            document.getElementById("main").style.marginLeft = "250px";
+            document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+        }
+        function openProfile() {
+            document.getElementById("myRightSidenav").style.width = "300px";
+            document.getElementById("main").style.marginLeft = "250px";
+            document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+            document.body.style.backgroundColor = "white";
+        }
+        function closeProfile() {
+            document.getElementById("myRightSidenav").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+            document.body.style.backgroundColor = "white";
+        }
+    </script>
+
+
+
+
+
+    <!-- pie chart script -->
+    <script type="text/javascript">
+
+        var obj = {
+            values: [15, 50, 20, 85, 30],
+            colors: ['#ffc0cb', '#d836d8', '#5f7ae4', '#5bdaeb', '#9E9E9E'],
+            animation: true,
+            animationSpeed: 3,
+            fillTextData: true,
+            fillTextColor: '#000',
+            fillTextAlign: 1.90,
+            fillTextPosition: 'inner',
+            doughnutHoleSize: 70,
+            doughnutHoleColor: '#fff',
+            offset: 1,
+            pie: 'normal',
+            isStrokePie: {
+                stroke: 20,
+                overlayStroke: true,
+                overlayStrokeColor: '#eee',
+                strokeStartEndPoints: 'Yes',
+                strokeAnimation: true,
+                strokeAnimationSpeed: 40,
+                fontSize: '80px',
+                textAlignement: 'center',
+                fontFamily: 'Arial',
+                fontWeight: 'bold'
+            }
+        };
+        var obj1 = {
+            values: [15, 50, 20, 85, 30],
+            colors: ['#ffc0cb', '#d836d8', '#5f7ae4', '#5bdaeb', '#9E9E9E'],
+            animation: true,
+            animationSpeed: 3,
+            fillTextData: true,
+            fillTextColor: '#000',
+            fillTextAlign: 1.90,
+            fillTextPosition: 'inner',
+            doughnutHoleSize: 70,
+            doughnutHoleColor: '#fff',
+            offset: 1,
+            pie: 'normal',
+            isStrokePie: {
+                stroke: 20,
+                overlayStroke: true,
+                overlayStrokeColor: '#eee',
+                strokeStartEndPoints: 'Yes',
+                strokeAnimation: true,
+                strokeAnimationSpeed: 40,
+                fontSize: '80px',
+                textAlignement: 'center',
+                fontFamily: 'Arial',
+                fontWeight: 'bold'
+            }
+        };
+
+
+        generatePieGraph('myCanvas', obj);
+        generatePieGraph('myCanvas1', obj1);
+
+    </script>
+</body>
+
+</html>
